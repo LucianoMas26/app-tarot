@@ -2,7 +2,7 @@ import { getServiceByTitle } from "@/app/libs/getServiceByTitle"
 import { CardProps } from "@/components/Card/Card"
 import { Alex_Brush } from "next/font/google"
 
-export const alexBrush = Alex_Brush({
+const alexBrush = Alex_Brush({
   subsets: ["latin"],
   weight: ["400"]
 })

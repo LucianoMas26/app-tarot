@@ -6,7 +6,7 @@ import { Alex_Brush } from "next/font/google"
 import MobileNavbar from "../MobileNavbar/MobileNavbar"
 import { useState, useRef, useEffect } from "react"
 
-export const alexBrush = Alex_Brush({
+const alexBrush = Alex_Brush({
   subsets: ["latin"],
   weight: ["400"]
 })

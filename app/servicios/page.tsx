@@ -6,7 +6,7 @@ import loadingImage from "@/public/images/tarot-loading-unscreen.gif"
 import Image from "next/image"
 import { colors } from "@/utils/colors"
 
-export const alexBrush = Alex_Brush({
+const alexBrush = Alex_Brush({
   subsets: ["latin"],
   weight: ["400"]
 })

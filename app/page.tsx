@@ -4,7 +4,7 @@ import { Alex_Brush } from "next/font/google"
 import Head from "next/head"
 import Footer from "@/components/Footer/Footer"
 
-export const alexBrush = Alex_Brush({
+const alexBrush = Alex_Brush({
   subsets: ["latin"],
   weight: ["400"]
 })

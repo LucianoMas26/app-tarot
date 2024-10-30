@@ -6,7 +6,7 @@ import { Bona_Nova, Alex_Brush } from "next/font/google"
 import Link from "next/link"
 
 const bonanova = Bona_Nova({ subsets: ["latin"], weight: ["400", "700"] })
-export const lobster = Alex_Brush({
+const lobster = Alex_Brush({
   subsets: ["latin"],
   weight: ["400"]
 })
