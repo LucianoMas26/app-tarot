@@ -16,3 +16,23 @@ WSManStackVersion: 3.0
 PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
+PS>try { . "c:\Users\paler\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+PS C:\Users\paler\Escritorio\app-tarot> git add .
+
+PS C:\Users\paler\Escritorio\app-tarot> git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin
+/main'.
+PS C:\Users\paler\Escritorio\app-tarot> git commit -m "eliminating innecesary files and changing paths"
+gs/Reading.tsx
+PS C:\Users\paler\Escritorio\app-tarot> git push origin main
+   11b3180..caf26c7  main -> main
+PS C:\Users\paler\Escritorio\app-tarot> git status
+  (use "git restore <file>..." to dis
+card changes in working directory)
+        modified:   20241030/PowerShe
+ll_transcript.DESKTOP-LCRPF3F.KppDwXb
+p.20241030014145.txt
+
+no changes added to commit (use "git
+add" and/or "git commit -a")
