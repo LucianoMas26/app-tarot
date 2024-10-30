@@ -1,11 +1,15 @@
 import Card from "@/components/Card/Card"
-import { alexBrush } from "../page"
-
+import { Alex_Brush } from "next/font/google"
 import { CardProps } from "@/components/Card/Card"
 import { getServices } from "../libs/services"
 import loadingImage from "@/public/images/tarot-loading-unscreen.gif"
 import Image from "next/image"
 import { colors } from "@/utils/colors"
+
+export const alexBrush = Alex_Brush({
+  subsets: ["latin"],
+  weight: ["400"]
+})
 
 export default async function Servicios() {
   const services = await getServices()

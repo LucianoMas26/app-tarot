@@ -1,6 +1,6 @@
 "use client"
 
-import Image, { StaticImageData } from "next/image"
+import { StaticImageData } from "next/image"
 import { FC } from "react"
 import { Bona_Nova, Alex_Brush } from "next/font/google"
 import Link from "next/link"

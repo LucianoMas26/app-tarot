@@ -2,9 +2,14 @@
 import icon from "@/public/images/tarot-icon-removebg-preview.png"
 import Image from "next/image"
 import Link from "next/link"
-import { alexBrush } from "@/app/page"
+import { Alex_Brush } from "next/font/google"
 import MobileNavbar from "../MobileNavbar/MobileNavbar"
 import { useState, useRef, useEffect } from "react"
+
+export const alexBrush = Alex_Brush({
+  subsets: ["latin"],
+  weight: ["400"]
+})
 
 export default function Navbar() {
   const [isMobileNavVisible, setIsMobileNavVisible] = useState(false)
