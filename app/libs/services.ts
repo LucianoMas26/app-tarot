@@ -1,20 +1,13 @@
-import { Error } from "mongoose"
+import Service from "../models/services"
+import { connectDB } from "./mongodb"
 
-const URL = process.env.URL
-
-export async function getServices() {
+export default async function getServices() {
   try {
-    const response = await fetch(`${URL}/api/services`)
+    await connectDB()
 
-    if (!response.ok) {
-      const errorText = await response.text()
-      throw new Error(
-        `Error al obtener los servicios: ${response.status} ${response.statusText}. Respuesta: ${errorText}`
-      )
-    }
+    const services = await Service.find({})
 
-    const data = await response.json()
-    return data
+    return JSON.parse(JSON.stringify(services))
   } catch (error) {
     console.error("Error en getServices:", error)
     throw new Error("No se pudieron obtener los servicios")
