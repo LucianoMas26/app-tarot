@@ -5,9 +5,14 @@ const URL = process.env.URL
 export async function getServices() {
   try {
     const response = await fetch(`${URL}/api/services`)
+
     if (!response.ok) {
-      throw new Error("Error al obtener los servicios")
+      const errorText = await response.text()
+      throw new Error(
+        `Error al obtener los servicios: ${response.status} ${response.statusText}. Respuesta: ${errorText}`
+      )
     }
+
     const data = await response.json()
     return data
   } catch (error) {
