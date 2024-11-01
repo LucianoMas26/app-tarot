@@ -36,3 +36,39 @@ p.20241030014145.txt
 
 no changes added to commit (use "git
 add" and/or "git commit -a")
+PS C:\Users\paler\Escritorio\app-tarot> git add 20241030/PowerShell_transcript.DESKTOP-LCRPF3F.KppDwXbp.20241030014145.txt
+
+PS C:\Users\paler\Escritorio\app-tarot> git status
+
+PS C:\Users\paler\Escritorio\app-tarot> git commit -m "adding missing file"
+
+PS C:\Users\paler\Escritorio\app-tarot> git push origin main
+
+PS C:\Users\paler\Escritorio\app-tarot> git status
+        modified:   app/servicios/pag
+e.tsx
+        modified:   app/turnos/page.t
+sx
+        modified:   components/Card/C
+ard.tsx
+        modified:   components/Navbar
+/Navbar.tsx
+
+no changes added to commit (use "git
+add" and/or "git commit -a")
+PS C:\Users\paler\Escritorio\app-tarot> git add .
+
+PS C:\Users\paler\Escritorio\app-tarot> git commit -m "changing exports"
+
+PS C:\Users\paler\Escritorio\app-tarot> git push origin main
+
+PS C:\Users\paler\Escritorio\app-tarot> git init
+
+PS C:\Users\paler\Escritorio\app-tarot> git add .
+
+PS C:\Users\paler\Escritorio\app-tarot> git commit -m "creating app-tarot"
+
+PS C:\Users\paler\Escritorio\app-tarot> git remote add origin https://github.com/LucianoMas26/app-tarot.git
+
+PS C:\Users\paler\Escritorio\app-tarot> git push -u origin main
+
