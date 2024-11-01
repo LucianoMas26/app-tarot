@@ -17,3 +17,56 @@ PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
 PS>try { . "c:\Users\paler\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+PS C:\Users\paler\Escritorio\app-tarot> vercel
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20241101000118
+Nombre de usuario: DESKTOP-LCRPF3F\paler
+Usuario RunAs: DESKTOP-LCRPF3F\paler
+Nombre de la configuración: 
+Máquina: DESKTOP-LCRPF3F (Microsoft Windows NT 10.0.19045.0)
+Aplicación host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\paler\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 21128
+PSVersion: 5.1.19041.5007
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.5007
+BuildVersion: 10.0.19041.5007
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> EnlaceDeParámetros(Out-String): nombre="InputObject"; valor="No se puede cargar el archivo C:\Users\paler\AppData\Roaming\npm\vercel.ps1. El archivo C:\Users\paler\AppData\Roaming\npm\vercel.ps1 no está firmado digitalmente. No se puede ejecutar este script en el sistema actual. Para obtener más información acerca de la ejecución de scripts y la configuración de la directiva de ejecución, consulta about_Execution_Policies en https:/go.microsoft.com/fwlink/?LinkID=135170."
+vercel : No se puede cargar el archivo C:\Users\paler\AppData\Roaming\npm\vercel.ps1. El archivo 
+C:\Users\paler\AppData\Roaming\npm\vercel.ps1 no está firmado digitalmente. No se puede ejecutar este script en el 
+sistema actual. Para obtener más información acerca de la ejecución de scripts y la configuración de la directiva de 
+ejecución, consulta about_Execution_Policies en https:/go.microsoft.com/fwlink/?LinkID=135170.
+En línea: 1 Carácter: 1
++ vercel
++ ~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+vercel : No se puede cargar el archivo C:\Users\paler\AppData\Roaming\npm\vercel.ps1. El archivo 
+C:\Users\paler\AppData\Roaming\npm\vercel.ps1 no está firmado digitalmente. No se puede ejecutar este script en el 
+sistema actual. Para obtener más información acerca de la ejecución de scripts y la configuración de la directiva de 
+ejecución, consulta about_Execution_Policies en https:/go.microsoft.com/fwlink/?LinkID=135170.
+En línea: 1 Carácter: 1
++ vercel
++ ~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+vercel : No se puede cargar el archivo
+C:\Users\paler\AppData\Roaming\npm\vercel.ps1. El archivo
+C:\Users\paler\AppData\Roaming\npm\vercel.ps1 no está
+firmado digitalmente. No se puede ejecutar este script en
+el sistema actual. Para obtener más información acerca de
+la ejecución de scripts y la configuración de la directiva
+de ejecución, consulta about_Execution_Policies en
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+En línea: 1 Carácter: 1
++ vercel
++ ~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSec
+   urityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
