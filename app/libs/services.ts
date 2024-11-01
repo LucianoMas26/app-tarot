@@ -1,5 +1,6 @@
 import { Error } from "mongoose"
-const URL: string = process.env.URL || "http://localhost:3000"
+
+const URL = process.env.URL
 
 export async function getServices() {
   try {
