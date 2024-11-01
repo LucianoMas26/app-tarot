@@ -1,8 +1,9 @@
 import { Error } from "mongoose"
+const URL: string = process.env.URL || "http://localhost:3000"
 
 export async function getServices() {
   try {
-    const response = await fetch("http://localhost:3000/api/services")
+    const response = await fetch(`${URL}/api/services`)
     if (!response.ok) {
       throw new Error("Error al obtener los servicios")
     }
