@@ -1,0 +1,25 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20241031211945
+Nombre de usuario: DESKTOP-LCRPF3F\paler
+Usuario RunAs: DESKTOP-LCRPF3F\paler
+Nombre de la configuración: 
+Máquina: DESKTOP-LCRPF3F (Microsoft Windows NT 10.0.19045.0)
+Aplicación host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\paler\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Id. de proceso: 7976
+PSVersion: 5.1.19041.5007
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.5007
+BuildVersion: 10.0.19041.5007
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>try { . "c:\Users\paler\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+PS C:\Users\paler\Escritorio\app-tarot> git add .
+
+PS C:\Users\paler\Escritorio\app-tarot> git commit -m "updating git ignore"
+
+PS C:\Users\paler\Escritorio\app-tarot> git push -u origin main
+
