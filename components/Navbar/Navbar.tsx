@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Alex_Brush } from "next/font/google"
 import MobileNavbar from "../MobileNavbar/MobileNavbar"
 import { useState, useRef, useEffect } from "react"
+import { breeSerif } from "@/app/page"
 
 const alexBrush = Alex_Brush({
   subsets: ["latin"],
@@ -72,7 +73,9 @@ export default function Navbar() {
           </button>
         </div>
         <div className="items-center justify-between hidden w-full md:flex md:w-auto ">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 border text-[#dc88d1] font-thin rounded-lg md:space-x-8  md:flex-row md:mt-0 md:border-0 ">
+          <ul
+            className={`${breeSerif.className} flex flex-col p-4 md:p-0 mt-4 border text-[#dc88d1] font-thin rounded-lg md:space-x-8  md:flex-row md:mt-0 md:border-0 `}
+          >
             <li>
               <Link
                 href="/"
@@ -84,18 +87,26 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href={"/turnos"}
-                className="block py-2 px-3  duration-300 ease-in-out"
+                href={"/reading"}
+                className="block py-2 px-3   duration-300 ease-in-out"
               >
-                Turnos
+                Lecturas
               </Link>
             </li>
             <li>
               <Link
-                href={"/servicios"}
+                href={"/ritual"}
                 className="block py-2 px-3   duration-300 ease-in-out"
               >
-                Servicios
+                Rituales
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/turnos"}
+                className="block py-2 px-3  duration-300 ease-in-out"
+              >
+                Turnos
               </Link>
             </li>
           </ul>

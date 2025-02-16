@@ -16,16 +16,22 @@ const MobileNavbar = () => {
             Home
           </Link>
           <Link
+            href={"/reading"}
+            className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
+          >
+            Servicios
+          </Link>
+          <Link
+            href={"/ritual"}
+            className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
+          >
+            Servicios
+          </Link>
+          <Link
             href={"/turnos"}
             className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
           >
             Turnos
-          </Link>
-          <Link
-            href={"/servicios"}
-            className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
-          >
-            Servicios
           </Link>
         </li>
       </ul>
