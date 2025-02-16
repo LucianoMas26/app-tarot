@@ -29,7 +29,7 @@ const Footer = () => {
               </svg>
             </Link>
             <Link
-              href="https://www.instagram.com/littlexsunshine/"
+              href="https://www.instagram.com/luzem.tarot/"
               target="blank"
               className=" bg-[#dc88d1] w-7 h-7 sm:w-8 sm:h-8 rounded-full flex justify-center items-center"
             >
