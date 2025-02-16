@@ -1,6 +1,7 @@
 import { getServiceByTitle } from "@/app/libs/getServiceByTitle"
 import { CardProps } from "@/components/Card/Card"
 import { Alex_Brush } from "next/font/google"
+import { breeSerif } from "@/app/page"
 
 const alexBrush = Alex_Brush({
   subsets: ["latin"],
@@ -34,7 +35,9 @@ export default async function ServiceDetail({ params }: { params: Params }) {
         >
           {service.title}
         </h1>
-        <p className="text-sm sm:text-base md:text-lg">{service.description}</p>
+        <p className={`${breeSerif.className} text-sm sm:text-base md:text-lg`}>
+          {service.description}
+        </p>
         <p className={`${alexBrush.className} text-2xl md:text-4xl `}>
           {`Valor: $${service.price}`}
         </p>

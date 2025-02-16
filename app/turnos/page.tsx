@@ -1,4 +1,5 @@
 import { Alex_Brush } from "next/font/google"
+import { breeSerif } from "../page"
 
 const alexBrush = Alex_Brush({
   subsets: ["latin"],
@@ -14,24 +15,30 @@ export default function Turnos() {
         >
           Reserva de Turnos
         </h1>
-        <p className="text-sm sm:text-base md:text-lg mb-4">
+        <p
+          className={`${breeSerif.className} text-sm sm:text-base md:text-lg mb-4`}
+        >
           ¡Bienvenid@ a mi espacio espiritual! Si deseas reservar un turno,
           simplemente envíame un mensaje por WhatsApp al
           <a
             href="https://wa.me/1234567890"
-            className="text-gray-500 hover:underline duration-300 ease-in-out"
+            className={`${breeSerif.className} text-gray-500 hover:underline duration-300 ease-in-out`}
           >
             {" "}
             +54 9 341 346-1636
           </a>
           .
         </p>
-        <p className="hidden sm:block text-sm sm:text-base md:text-lg mb-4">
+        <p
+          className={`${breeSerif.className} hidden sm:block text-sm sm:text-base md:text-lg mb-4`}
+        >
           Al contactarme, por favor incluye tu nombre, el servicio que deseas y
           tu disponibilidad. Esto me ayudará a programar tu cita de manera
           armoniosa.
         </p>
-        <p className="text-sm sm:text-base md:text-lg mt-4">
+        <p
+          className={`${breeSerif.className} text-sm sm:text-base md:text-lg mt-4`}
+        >
           Estoy aquí para guiarte en tu camino espiritual y ofrecerte una
           experiencia transformadora. ¡Espero poder ayudarte pronto!
         </p>
