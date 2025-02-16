@@ -1,7 +1,11 @@
-import { Alex_Brush } from "next/font/google"
-import { breeSerif } from "../page"
+import { Alex_Brush, Bree_Serif } from "next/font/google"
 
 const alexBrush = Alex_Brush({
+  subsets: ["latin"],
+  weight: ["400"]
+})
+
+const breeSerif = Bree_Serif({
   subsets: ["latin"],
   weight: ["400"]
 })

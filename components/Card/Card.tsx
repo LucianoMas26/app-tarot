@@ -3,7 +3,12 @@
 import { StaticImageData } from "next/image"
 import { FC } from "react"
 import Link from "next/link"
-import { breeSerif } from "@/app/page"
+import { Bree_Serif } from "next/font/google"
+
+const breeSerif = Bree_Serif({
+  subsets: ["latin"],
+  weight: ["400"]
+})
 
 export interface CardProps {
   id: string

@@ -1,9 +1,13 @@
 import { getServiceByTitle } from "@/app/libs/getServiceByTitle"
 import { CardProps } from "@/components/Card/Card"
-import { Alex_Brush } from "next/font/google"
-import { breeSerif } from "@/app/page"
+import { Alex_Brush, Bree_Serif } from "next/font/google"
 
 const alexBrush = Alex_Brush({
+  subsets: ["latin"],
+  weight: ["400"]
+})
+
+const breeSerif = Bree_Serif({
   subsets: ["latin"],
   weight: ["400"]
 })

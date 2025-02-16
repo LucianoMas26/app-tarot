@@ -2,12 +2,16 @@
 import icon from "@/public/images/tarot-icon-removebg-preview.png"
 import Image from "next/image"
 import Link from "next/link"
-import { Alex_Brush } from "next/font/google"
+import { Alex_Brush, Bree_Serif } from "next/font/google"
 import MobileNavbar from "../MobileNavbar/MobileNavbar"
 import { useState, useRef, useEffect } from "react"
-import { breeSerif } from "@/app/page"
 
 const alexBrush = Alex_Brush({
+  subsets: ["latin"],
+  weight: ["400"]
+})
+
+const breeSerif = Bree_Serif({
   subsets: ["latin"],
   weight: ["400"]
 })

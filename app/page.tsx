@@ -9,7 +9,7 @@ const alexBrush = Alex_Brush({
   weight: ["400"]
 })
 
-export const breeSerif = Bree_Serif({
+const breeSerif = Bree_Serif({
   subsets: ["latin"],
   weight: ["400"]
 })
