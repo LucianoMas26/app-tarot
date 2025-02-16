@@ -26,13 +26,13 @@ const MobileNavbar = () => {
             href={"/reading"}
             className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
           >
-            Servicios
+            Lecturas
           </Link>
           <Link
             href={"/ritual"}
             className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
           >
-            Servicios
+            Rituales
           </Link>
           <Link
             href={"/turnos"}
