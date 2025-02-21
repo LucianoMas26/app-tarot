@@ -4,6 +4,7 @@
 
 html {
   min-height: 100svh;
+  background-color: #f9f9f9;
 }
 
 @keyframes levitate {

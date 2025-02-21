@@ -6,7 +6,7 @@ const breeSerif = Bree_Serif({
   weight: ["400"]
 })
 
-const MobileNavbar = () => {
+const MobileNavbar = ({ closeMobileNav }: { closeMobileNav: () => void }) => {
   return (
     <div
       className="fixed z-20 items-center justify-between w-full md:flex md:w-auto md:order-1"
@@ -19,24 +19,52 @@ const MobileNavbar = () => {
           <Link
             href="/"
             className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
+            onClick={closeMobileNav}
           >
             Home
           </Link>
+        </li>
+        <li>
           <Link
-            href={"/reading"}
+            href="/about"
             className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
+            onClick={closeMobileNav}
+          >
+            Sobre mi
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/reading"
+            className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
+            onClick={closeMobileNav}
           >
             Lecturas
           </Link>
+        </li>
+        <li>
           <Link
-            href={"/ritual"}
+            href="/ritual"
             className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
+            onClick={closeMobileNav}
           >
             Rituales
           </Link>
+        </li>
+        <li>
           <Link
-            href={"/turnos"}
+            href="/courses"
             className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
+            onClick={closeMobileNav}
+          >
+            Cursos
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/turnos"
+            className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
+            onClick={closeMobileNav}
           >
             Turnos
           </Link>

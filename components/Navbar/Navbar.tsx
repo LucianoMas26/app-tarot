@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Alex_Brush, Bree_Serif } from "next/font/google"
 import MobileNavbar from "../MobileNavbar/MobileNavbar"
-import { useState, useRef, useEffect } from "react"
+import { useState } from "react"
 
 const alexBrush = Alex_Brush({
   subsets: ["latin"],
@@ -23,37 +23,23 @@ export default function Navbar() {
     setIsMobileNavVisible(!isMobileNavVisible)
   }
 
-  const mobileNavRef = useRef<HTMLDivElement>(null)
-
-  const handleClickOutside = (event: MouseEvent) => {
-    if (
-      mobileNavRef.current &&
-      !mobileNavRef.current.contains(event.target as Node)
-    ) {
-      setIsMobileNavVisible(false)
-    }
+  const closeMobileNav = () => {
+    setIsMobileNavVisible(false)
   }
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
 
   return (
     <nav className="fixed bg-[#f9f9f9] w-full z-50 top-0 start-0 border-b border-[#dc88d1] drop-shadow-md">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 ">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image src={icon} alt="Icon" width={40} height={40} />
           <span
-            className={`${alexBrush.className} hidden sm:block self-center text-3xl text-[#dc88d1]  whitespace-nowrap`}
+            className={`${alexBrush.className} hidden sm:block self-center text-3xl text-[#dc88d1] whitespace-nowrap`}
           >
             Luzem
           </span>
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <div className=" px-4 "></div>
+          <div className="px-4"></div>
           <button
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#dc88d1] rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-offset-white"
@@ -76,14 +62,14 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <div className="items-center justify-between hidden w-full md:flex md:w-auto ">
+        <div className="items-center justify-between hidden w-full md:flex md:w-auto">
           <ul
-            className={`${breeSerif.className} flex flex-col p-4 md:p-0 mt-4 border text-[#dc88d1] font-thin rounded-lg md:space-x-8  md:flex-row md:mt-0 md:border-0 `}
+            className={`${breeSerif.className} flex flex-col p-4 md:p-0 mt-4 border text-[#dc88d1] font-thin rounded-lg md:space-x-6 md:flex-row md:mt-0 md:border-0`}
           >
             <li>
               <Link
                 href="/"
-                className="block py-2 px-3 duration-300 ease-in-out "
+                className="block py-2 px-3 duration-300 ease-in-out"
                 aria-current="page"
               >
                 Home
@@ -91,8 +77,17 @@ export default function Navbar() {
             </li>
             <li>
               <Link
+                href="/about"
+                className="block py-2 px-3 duration-300 ease-in-out"
+                aria-current="page"
+              >
+                Sobre mí
+              </Link>
+            </li>
+            <li>
+              <Link
                 href={"/reading"}
-                className="block py-2 px-3   duration-300 ease-in-out"
+                className="block py-2 px-3 duration-300 ease-in-out"
               >
                 Lecturas
               </Link>
@@ -100,15 +95,22 @@ export default function Navbar() {
             <li>
               <Link
                 href={"/ritual"}
-                className="block py-2 px-3   duration-300 ease-in-out"
+                className="block py-2 px-3 duration-300 ease-in-out"
               >
                 Rituales
               </Link>
             </li>
+            <Link
+              href="/courses"
+              className="block py-2 px-3 duration-300 ease-in-out"
+              aria-current="page"
+            >
+              Cursos
+            </Link>
             <li>
               <Link
                 href={"/turnos"}
-                className="block py-2 px-3  duration-300 ease-in-out"
+                className="block py-2 px-3 duration-300 ease-in-out"
               >
                 Turnos
               </Link>
@@ -116,11 +118,8 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-      {isMobileNavVisible && (
-        <div ref={mobileNavRef}>
-          <MobileNavbar />
-        </div>
-      )}
+
+      {isMobileNavVisible && <MobileNavbar closeMobileNav={closeMobileNav} />}
     </nav>
   )
 }
