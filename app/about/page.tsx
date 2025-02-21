@@ -12,7 +12,7 @@ const breeSerif = Bree_Serif({
 
 export default function About() {
   return (
-    <div className="relative w-full h-[calc(100svh-4rem)] flex justify-center items-center">
+    <div className="relative w-full h-[calc(100vh-4rem)] flex justify-center items-center">
       <div className="text-center p-6 max-h-[90%]">
         <h1
           className={`${alexBrush.className} text-4xl sm:text-5xl md:text-6xl mb-6`}
