@@ -29,11 +29,13 @@ export default function Turnos() {
         <p
           className={`${breeSerif.className} text-sm sm:text-base md:text-lg mb-4`}
         >
-          ¡Bienvenid@ a mi espacio espiritual! Si deseas reservar un turno,
-          simplemente envíame un mensaje por WhatsApp al
+          Estoy aquí para guiarte en tu camino espiritual y ofrecerte un
+          ambiente seguro de respeto y amor.
+          <br />
+          Para reservar un turno, escribime a mi WhatsApp
           <a
             href={whatsappLink}
-            className={`${breeSerif.className} text-gray-500 hover:underline duration-300 ease-in-out`}
+            className="text-gray-500 hover:underline duration-300 ease-in-out"
           >
             {" "}
             +54 9 341 346-1636
@@ -41,17 +43,10 @@ export default function Turnos() {
           .
         </p>
         <p
-          className={`${breeSerif.className} hidden sm:block text-sm sm:text-base md:text-lg mb-4`}
+          className={`${breeSerif.className} text-sm sm:text-base md:text-lg mb-4`}
         >
           Al contactarme, por favor incluye tu nombre, el servicio que deseas y
-          tu disponibilidad. Esto me ayudará a programar tu cita de manera
-          armoniosa.
-        </p>
-        <p
-          className={`${breeSerif.className} text-sm sm:text-base md:text-lg mt-4`}
-        >
-          Estoy aquí para guiarte en tu camino espiritual y ofrecerte una
-          experiencia transformadora. ¡Espero poder ayudarte pronto!
+          tu disponibilidad.
         </p>
       </div>
     </div>

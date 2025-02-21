@@ -33,8 +33,8 @@ export default function Courses() {
           Este curso te guiará a través del fascinante mundo de los arcanos
           mayores del tarot. Aprenderás su simbología profunda, ejercicios de
           intuición, y cómo realizar la limpieza, carga y consagración de tu
-          mazo. Además, te enseñaremos cómo proteger y limpiar tu energía como
-          practicante y te brindaremos tareas prácticas para afianzar tu
+          mazo. Además, te enseñare cómo proteger y limpiar tu energía como
+          practicante y te brindare tareas prácticas para afianzar tu
           aprendizaje.
           <br />
           <br />

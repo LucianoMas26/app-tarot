@@ -81,7 +81,7 @@ export default function Navbar() {
                 className="block py-2 px-3 duration-300 ease-in-out"
                 aria-current="page"
               >
-                Sobre mí
+                Sobre Mí
               </Link>
             </li>
             <li>

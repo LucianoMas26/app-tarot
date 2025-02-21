@@ -30,7 +30,7 @@ const MobileNavbar = ({ closeMobileNav }: { closeMobileNav: () => void }) => {
             className="block py-2 px-3 duration-300 ease-in-out hover:bg-[#dc88d1] hover:text-white rounded"
             onClick={closeMobileNav}
           >
-            Sobre mi
+            Sobre Mí
           </Link>
         </li>
         <li>
