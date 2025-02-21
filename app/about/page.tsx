@@ -31,11 +31,12 @@ export default function About() {
           canalizaciones de seres queridos, así como las conexiones con maestros
           espirituales y seres de luz. Esta relación con los seres ascendidos me
           permite realizar limpiezas energéticas potentes y otros rituales que
-          se especifican en la sección de "Rituales". Como profesora titulada en
-          materias pedagógicas, también imparto clases de tarot y mediumnidad,
-          que podrás encontrar en la sección de "Cursos". Mi misión es
-          acompañarte en tu camino espiritual, actuando como el medio entre los
-          mensajes que el universo tiene para ti y tus necesidades espirituales.
+          se especifican en la sección de &quot;Rituales&quot;. Como profesora
+          titulada en materias pedagógicas, también imparto clases de tarot y
+          mediumnidad, que podrás encontrar en la sección de &quot;Cursos&quot;.
+          Mi misión es acompañarte en tu camino espiritual, actuando como el
+          medio entre los mensajes que el universo tiene para ti y tus
+          necesidades espirituales.
         </p>
       </div>
     </div>
